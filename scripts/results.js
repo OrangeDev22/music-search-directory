@@ -10,8 +10,7 @@ let loading = true;
 let title = document.createElement("h3");
 let songs = document.getElementsByClassName("song");
 let currentSong;
-
-console.log(songs);
+const form = document.getElementById("form_results");
 
 titlte_div.appendChild(title);
 
@@ -41,3 +40,9 @@ const fetchData = async () => {
 };
 
 fetchData();
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  window.location.href =
+    "results.html?search=" + form.getElementsByTagName("input")[0].value;
+});
