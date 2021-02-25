@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+main {
+  height: 100%;
+}
+
+#home {
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.561);
+  background-blend-mode: multiply;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  width: 55%;
+  top: 40%;
+  left: 25%;
+  text-align: center;
+  animation-name: initialAnimation;
+  animation-duration: 1s;
+}
+
+.banner > h1 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  height: 100%;
+}
+
+.btn {
+  border-radius: 1em;
+}
+
+.btn-primary {
+  background-color: transparent !important;
+  border-color: white !important;
+}
+
+@keyframes initialAnimation {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
