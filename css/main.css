@@ -51,6 +51,11 @@ main {
   border-color: white !important;
 }
 
+.btn-primary:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
 @keyframes initialAnimation {
   0% {
     transform: translateX(120px);
